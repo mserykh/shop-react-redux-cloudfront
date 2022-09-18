@@ -1,4 +1,4 @@
-service: my-store-app
+service: mserykh-rss-shop
 
 frameworkVersion: "3"
 
@@ -19,7 +19,7 @@ plugins:
 
 custom:
   client:
-    bucketName: my-store-app
+    bucketName: mserykh-rss-shop
     distributionFolder: dist
   s3BucketName: ${self:custom.client.bucketName}
 
