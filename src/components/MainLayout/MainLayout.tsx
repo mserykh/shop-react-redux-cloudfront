@@ -1,22 +1,9 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
 import Header from "~/components/MainLayout/components/Header";
 import Box from "@mui/material/Box";
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/" underline="hover">
-        My Store
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+import Footer from "./components/Footer";
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -39,8 +26,8 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         >
           Thank you for your purchase!
         </Typography>
-        <Copyright />
       </Box>
+      <Footer />
     </>
   );
 };
